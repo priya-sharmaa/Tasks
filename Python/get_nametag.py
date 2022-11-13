@@ -9,7 +9,7 @@ def get_boto3_client():
                              region_name="Value"
                              )
 #give the values of the instance id get from csv file
-instanceidlist= ["instance id", "instance id"]
+instanceidlist= ["instance id", "instance id", "instance id"]
 
 #to get the name of instances by providing instance id
 def get_tag_name(instanceid):
