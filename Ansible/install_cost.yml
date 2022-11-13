@@ -1,0 +1,15 @@
+- name: Transfer and execute a script.
+  hosts: all
+  strategy: free
+  tasks:
+     - name: create dir
+       command: mkdir -p ScriptRun/New1
+
+     - name: change the permision
+       command: chmod 777 ScriptRun/New1
+
+     - name: Transfer the script
+       copy: src=/Users/priyasharma/Documents/BashScripts/cost_exporter.sh dest=ScriptRun/New1/cost_exporter.sh  mode=0777
+
+     - name: Execute the script
+       command: sudo bash ScriptRun/New1/cost_exporter.sh
