@@ -1,4 +1,4 @@
-- name: Transfer and execute a script.
+- name: Transfer and execute the  script.
   hosts: all
   strategy: free
   tasks:
