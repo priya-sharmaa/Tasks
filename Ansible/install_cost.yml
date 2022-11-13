@@ -2,7 +2,7 @@
   hosts: all
   strategy: free
   tasks:
-     - name: create dir
+     - name: create directory
        command: mkdir -p ScriptRun/New1
 
      - name: change the permision
